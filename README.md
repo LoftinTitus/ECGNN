@@ -2,7 +2,7 @@
 
 ## Arrhythmia Detection Neural Network (Python & Rust)
 
-⚡ **From-scratch neural network for arrhythmia classification**  
+ **From-scratch neural network for arrhythmia classification**  
 Prototype in Python to a High-performance reimplementation in Rust using no libraries
 
 ---
