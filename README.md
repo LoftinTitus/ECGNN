@@ -33,10 +33,10 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 ## To-Do List
 
 ### Python Prototype
-- [] Project structure setup
-- [] Data loading functions
-- [] Signal preprocessing (normalization, segmentation)
-- [] Forward pass implementation
+- [X] Project structure setup
+- [ ] Data loading functions - load_data and load_all_data
+- [ ] Signal preprocessing (normalization, segmentation)
+- [ ] Forward pass implementation
 - [ ] Backpropagation logic
 - [ ] Loss calculation
 - [ ] Basic training loop
