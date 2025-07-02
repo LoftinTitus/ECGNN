@@ -36,7 +36,7 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 - [X] Project structure setup
 - [X] Data loading functions - load_data and load_all_data
 - [X] Signal preprocessing (normalization, segmentation)
-- [ ] Forward pass implementation
+- [X] Forward pass implementation
 - [ ] Backpropagation logic
 - [ ] Loss calculation
 - [ ] Basic training loop
@@ -59,17 +59,5 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 
 - Target dataset: **MIT-BIH Arrhythmia Database**
 - Initial testing with synthetic or small sample ECG segments
-- Later testing on real-world ECG signals
 
 ---
-
-## Future Features
-
-- Convolutional layers for raw signal processing  
-- Real-time arrhythmia detection pipeline  
-- Potential embedded device deployment  
-
----
-
-## Project Structure (Planned)
-
