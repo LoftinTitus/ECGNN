@@ -37,10 +37,10 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 - [X] Data loading functions - load_data and load_all_data
 - [X] Signal preprocessing (normalization, segmentation)
 - [X] Forward pass implementation
-- [ ] Backpropagation logic
-- [ ] Loss calculation
-- [ ] Basic training loop
-- [ ] Toy dataset testing
+- [X] Backpropagation logic
+- [X] Loss calculation
+- [X] Basic training loop
+- [ ] Dataset testing
 - [ ] Evaluate classification accuracy
 
 ### Rust Reimplementation
