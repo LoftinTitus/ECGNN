@@ -3,18 +3,16 @@ import csv
 import math
 from math import sqrt
 
-
 # Data loading functions
 def load_csv(file_path):
-    
     data = []
-
     with open(file_path, 'r') as file:
         lines = file.readlines()
-    for line in lines[1]:
-        if line.strip():  # Check if the line is not empty
+    for line in lines[1:]:  # Skip header
+        if line.strip():
             values = line.strip().split(',')
-            data.append(float(v) for v in values)
+            float_values = [float(v) for v in values]  # Convert all to float
+            data.append(float_values)
     return data
     
 
@@ -30,6 +28,7 @@ def load_all_data(folder_path):
 # If needed: Add a missing data handling function, interpolating or filling missing values
 
 def data_scaling(data):
+    data = list(data)  # Ensure data is a list of lists
 
     col2 = [row[1] for row in data]  # Extract the second column
     col3 = [row[2] for row in data]  # Extract the third column
