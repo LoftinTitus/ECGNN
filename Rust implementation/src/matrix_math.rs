@@ -1,6 +1,4 @@
-
-
-def matrix_multiply(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
+pub fn matrix_multiply(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     let rows_a = a.len();
     let cols_a = a[0].len();
     let rows_b = b.len();
@@ -23,7 +21,7 @@ def matrix_multiply(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     result
 }
 
-def matrix_transpose(matrix: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
+pub fn matrix_transpose(matrix: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     let rows = matrix.len();
     let cols = matrix[0].len();
     let mut result = vec![vec![0.0; rows]; cols];
@@ -37,7 +35,7 @@ def matrix_transpose(matrix: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     result
 }
 
-def matrix_add(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
+pub fn matrix_add(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     let rows = a.len();
     let cols = a[0].len();
 
@@ -56,7 +54,7 @@ def matrix_add(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     result
 }
 
-def dot_product(a: &Vec<f64>, b: &Vec<f64>) -> f64 {
+pub fn dot_product(a: &Vec<f64>, b: &Vec<f64>) -> f64 {
     if a.len() != b.len() {
         panic!("Vectors must be of the same length for dot product");
     }
@@ -70,7 +68,7 @@ def dot_product(a: &Vec<f64>, b: &Vec<f64>) -> f64 {
     result
 }
 
-def scalar_multiply(matrix: &Vec<Vec<f64>>, scalar: f64) -> Vec<Vec<f64>> {
+pub fn scalar_multiply(matrix: &Vec<Vec<f64>>, scalar: f64) -> Vec<Vec<f64>> {
     let rows = matrix.len();
     let cols = matrix[0].len();
     let mut result = vec![vec![0.0; cols]; rows];
@@ -84,7 +82,7 @@ def scalar_multiply(matrix: &Vec<Vec<f64>>, scalar: f64) -> Vec<Vec<f64>> {
     result
 }
 
-def elementwise_multiply(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
+pub fn elementwise_multiply(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     let rows = a.len();
     let cols = a[0].len();
 
