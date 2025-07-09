@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["data_scaling","data_segmentation","load_all_data","load_csv"]};
