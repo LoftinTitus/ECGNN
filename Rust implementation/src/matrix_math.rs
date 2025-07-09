@@ -100,3 +100,59 @@ pub fn elementwise_multiply(a: &Vec<Vec<f64>>, b: &Vec<Vec<f64>>) -> Vec<Vec<f64
 
     result
 }
+
+pub fn vector_add(a: &Vec<f64>, b: &Vec<f64>) -> Vec<f64> {
+    if a.len() != b.len() {
+        panic!("Vectors must be of the same length for addition");
+    }
+    a.iter().zip(b.iter()).map(|(x, y)| x + y).collect()
+}
+
+/// Matrix addition in-place - modifies first matrix
+pub fn matrix_add_inplace(a: &mut Vec<Vec<f64>>, b: &Vec<Vec<f64>>) {
+    if a.len() != b.len() || a[0].len() != b[0].len() {
+        panic!("Matrices must be of the same dimensions for addition");
+    }
+    for i in 0..a.len() {
+        for j in 0..a[0].len() {
+            a[i][j] += b[i][j];
+        }
+    }
+}
+
+/// Vector addition in-place - modifies first vector
+pub fn vector_add_inplace(a: &mut Vec<f64>, b: &Vec<f64>) {
+    if a.len() != b.len() {
+        panic!("Vectors must be of the same length for addition");
+    }
+    for i in 0..a.len() {
+        a[i] += b[i];
+    }
+}
+
+pub fn vector_scalar_divide(vector: &Vec<f64>, scalar: f64) -> Vec<f64> {
+    vector.iter().map(|x| x / scalar).collect()
+}
+
+pub fn matrix_scalar_divide(matrix: &Vec<Vec<f64>>, scalar: f64) -> Vec<Vec<f64>> {
+    matrix.iter()
+        .map(|row| row.iter().map(|x| x / scalar).collect())
+        .collect()
+}
+
+pub fn vector_elementwise_multiply(a: &Vec<f64>, b: &Vec<f64>) -> Vec<f64> {
+    if a.len() != b.len() {
+        panic!("Vectors must be of the same length for element-wise multiplication");
+    }
+    a.iter().zip(b.iter()).map(|(x, y)| x * y).collect()
+}
+
+/// Initialize gradient matrix with same dimensions as input, filled with zeros
+pub fn initialize_gradient_matrix_like(matrix: &Vec<Vec<f64>>) -> Vec<Vec<f64>> {
+    vec![vec![0.0; matrix[0].len()]; matrix.len()]
+}
+
+/// Initialize gradient vector with same length as input, filled with zeros
+pub fn initialize_gradient_vector_like(vector: &Vec<f64>) -> Vec<f64> {
+    vec![0.0; vector.len()]
+}

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["dot_product","elementwise_multiply","initialize_gradient_matrix_like","initialize_gradient_vector_like","matrix_add","matrix_add_inplace","matrix_multiply","matrix_scalar_divide","matrix_transpose","scalar_multiply","vector_add","vector_add_inplace","vector_elementwise_multiply","vector_scalar_divide"]};

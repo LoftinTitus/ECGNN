@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["apply_relu","apply_relu_derivative","backprop","calculate_accuracy","find_gradient","forward_pass","initialize_weights_and_bias","loss_function","predict","predict_batch","relu","relu_derivative","sigmoid","sigmoid_derivative","train_epoch","update_weights"]};

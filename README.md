@@ -47,9 +47,9 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 - [X] Project structure setup
 - [X] Data handling module
 - [X] Linear algebra module
-- [ ] Neural network core
-- [ ] Loss functions
-- [ ] Backpropagation
+- [X] Neural network core
+- [X] Loss functions
+- [X] Backpropagation
 - [ ] Training & evaluation
 - [ ] Performance optimization
 
