@@ -44,9 +44,9 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 - [ ] Evaluate classification accuracy
 
 ### Rust Reimplementation
-- [ ] Project structure setup
-- [ ] Data handling module
-- [ ] Linear algebra module (`nalgebra` optional)
+- [X] Project structure setup
+- [X] Data handling module
+- [X] Linear algebra module
 - [ ] Neural network core
 - [ ] Loss functions
 - [ ] Backpropagation
