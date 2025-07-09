@@ -40,8 +40,8 @@ This project develops a basic neural network from scratch to detect arrhythmias 
 - [X] Backpropagation logic
 - [X] Loss calculation
 - [X] Basic training loop
-- [ ] Dataset testing
-- [ ] Evaluate classification accuracy
+- [X] Dataset testing
+- [X] Evaluate classification accuracy
 
 ### Rust Reimplementation
 - [X] Project structure setup
